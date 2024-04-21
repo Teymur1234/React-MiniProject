@@ -1,0 +1,110 @@
+.section1-creators{
+    width: 100%;
+    height: 350px;
+    background-color: #BAB7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.section1-creators p{
+    width: 80%;
+}
+.section1-creators div{
+    width: 80%;
+    display: flex;
+    gap: 25px;
+}
+.section1-creators div h1{
+    font-size: 40px;
+}
+.section1-creators div button{
+    background-color: #DED4FC;
+    border: 1px solid white;
+    border-radius: 30px;
+    height: 50px;
+    width: 142px;
+    cursor: pointer;
+}
+.section1-creators div button:hover{
+    color: #2F72F2;
+    transition: .5s;
+}
+.section2-creators{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F9FF;
+    position: relative;
+}
+.search{
+    border: 1px solid black;
+    width: 80%;
+    height: 155px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -100px;
+
+}
+.search button{
+    width: 220px;
+    height: 43px;
+    background-color: white;
+    color: gray;
+    /* border-radius: 20px; */
+    border-right: none;
+    border: 1px solid #BAB7F7;
+}
+.search input{
+    width: 55%;
+    height: 43px;
+    /* border-radius: 20px; */
+    border-left: none;
+    border: 1px solid #BAB7F7;
+    outline: none;
+    padding-left: 20px;
+    position: relative;
+}
+.members{
+    margin-top: 70px;
+}
+.member h3{
+    text-align: center;
+}
+@media only screen and (max-width: 450px){
+   
+}
+@media only screen and (max-width: 550px){
+    .section1-creators div{
+        flex-direction: column;
+        width: 90%;
+        gap: 15px;
+    }
+    .section1-creators p{
+        width: 90%;
+    }
+    .search input{
+        width: 40%;
+    }
+    .search button{
+        width: 100px;
+    }
+   
+}
+@media only screen and (max-width: 777px){
+    .section1-creators div h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 992px){
+  
+}
+@media only screen and (min-width: 1200px) {
+
+}

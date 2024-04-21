@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menuicon{
+    display: none;
+    cursor: pointer;
+}
+.menuicon svg{
+    font-size: 25px;
+}
+.logo{
+    width: 180px;
+    height: 37px;
+    cursor: pointer;
+}
+.nav-section{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+nav{
+    border-radius: 5px;
+    transition: 0.5s;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    z-index: 19;
+    background-color: white;
+    justify-content: space-around;
+}
+.menulinks ul{
+    display: flex;
+    z-index: 1000;
+    gap: 20px;
+    list-style-type: none;
+}
+.menulinks ul li a{
+    text-decoration: none;
+    color: black;
+}
+.menulinks ul li a:hover{
+    color: #2F57EF;
+}
+.nav-buttons{
+    display: flex;
+    gap: 13px;
+}
+.language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.language img{
+    width: 20px;
+    height: 20px;
+}
+.nav-buttons button:first-of-type{
+    width: 107px;
+    border-radius: 5px;
+    height: 45px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-buttons button:first-of-type:hover{
+    background-color: #2F57EF;
+    color: white;
+    border: none;
+}  
+  .qeydiyyat{
+    display: block;
+    width: 127.98px;
+    height: 45px;
+    line-height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-decoration: none;
+    background-color: #2F57EF;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  .qeydiyyat span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .qeydiyyat:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    background: #9762E9;
+    transition: all .35s;
+  }
+  
+  .qeydiyyat:hover{
+    color: #fff;
+  }
+  
+  .qeydiyyat:hover:after{
+    width: 100%;
+  }
+  .sidebar-menu{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    left: -300px;
+    gap: 40px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    transition: 0.7s;
+}
+.sidebar-menu.open{
+    left: 0;
+}
+.sidebar-menu div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.sidebar-menu div:first-of-type svg{
+    font-size: 30px;
+}
+.sidebar-menu ul{
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+} 
+
+.sidebar-menu ul li a{
+    text-decoration: none;
+    color: black;
+} 
+.language1{
+    display: flex;
+    gap: 10px;
+}
+.language1 img{
+    width: 25px;
+    height: 25px;
+}
+.sidebar-menu div:nth-last-of-type(2){
+    display: flex;
+    gap: 5px;
+}
+.sidebar-menu div:nth-last-of-type(2) button:first-of-type{
+    width: 83.18px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+}
+.sidebar-menu div:nth-last-of-type(2) button:last-of-type{
+    width: 103.98px;
+    height: 45px;
+    background-color: #9762E9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.sidebar-menu p{
+    color: gray;
+}
+.sidebar-menu div:last-of-type{
+    display: flex;
+    gap: 5px;
+}
+.sidebar-menu div:last-of-type svg{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    font-size: 17px;
+    border: 1px solid gray;
+}
+.vl {
+   border-left: 1px solid gray;
+   height: 30px;
+}
+@media only screen and (max-width: 450px){
+    .logo{
+        width: 130px;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 600px){
+
+}
+@media only screen and (max-width: 777px){
+
+}
+@media only screen and (max-width: 1100px){
+   .nav-buttons{
+    display: none;
+   }
+   .menuicon{
+    display: flex;
+    gap: 15px;
+   }
+   .menuicon svg{
+        font-size: 30px;
+        color: gray;
+   }
+   .menulinks{
+    display: none;
+   }
+}
+@media only screen and (min-width: 1200px) {
+
+}
