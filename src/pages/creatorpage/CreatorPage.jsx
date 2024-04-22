@@ -1,17 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./creatorpage.css"
-import { useLocation } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { buyCoffee } from '../../Slice/coffeeSlice'
 import { FaUsers } from "react-icons/fa6";
 import { FaBook } from "react-icons/fa";
+import axios from 'axios'
 
 const number=1
 const number2=3
 const number3=5
 
 const CreatorPage = () => {
-  // const {id}=useParams()
+  
+  const {id}=useParams()
   const location=useLocation()
   const {member}=location.state
   const dispatch=useDispatch()
@@ -42,6 +44,19 @@ const CreatorPage = () => {
     setValue(number3)
 
   }
+  
+  const [message,setMessage]=useState("")
+  const [email,setEmail]=useState("")
+  const handleBuyCoffee =  (email, message, userId, value) => {
+    dispatch(buyCoffee({ userId, message, value, email }));
+  };
+  
+  const [sends,setSends]=useState([])
+
+  useEffect(()=>{
+    axios("http://localhost:3001/transactions").then(response=>setSends(response.data))
+  },[])
+
 
   const [value,setValue]=useState(1)
   return (
@@ -68,9 +83,9 @@ const CreatorPage = () => {
               <span style={{backgroundColor:click2 && value===number3 ? "#2F57EF": "white" , border: click2 && value===number3 ? "none" : "1px solid #E6E3F1", color: click2 && value===number3 ? "white" : " #E6E3F1"}} onClick={()=>clickedThird()}>{number3}</span>
               <input type="number" value={value} onChange={(e)=>setValue(e.target.value)}/>
             </div>
-            <input type="email" placeholder='Email'/>
-            <input type="text"  placeholder='Mesaj...'/>
-            <button className='kofeal'>{value} AZN kofe al</button>
+            <input type="email" placeholder='Email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
+            <input type="text"  placeholder='Mesaj...' value={message} onChange={(e)=>setMessage(e.target.value)}/>
+            <button className='kofeal' onClick={()=>handleBuyCoffee(email,message,id,value) }>{value} AZN kofe al</button>
           </div>
           <div className='about-part'>
             <div>
@@ -94,12 +109,22 @@ const CreatorPage = () => {
             </div>
               <p style={{display:bloq? "block":"none"}}>{member.info}</p>
               <p style={{display:bloq? "block":"none"}}>4 Ilden Coxdur Ki Azerbaycanda Mobil Oyun Yayınçısıyam</p>
+              <div className='messages'>
+                <h1>Ən son kofe alanlar</h1>
+                {sends && sends.map(send=> send.userId === id ?(
+                  <div key={send.userId}>
+                    <p>{send.email} {send.amount} kofe aldı.</p>
+                    <p>{send.message}</p>
+                  </div>
+                ): console.log("salam"))}
+              </div>
           </div>
           <div style={{display: bloq ? "none": "inline-block"}}>
             <h2 style={{display:"block",position:"relative", top:"70px", backgroundColor:"#FFF3CD"}}>Məlumat yoxdur</h2>
           </div>
         </div>
       </section>
+      
       </>
   )
 }

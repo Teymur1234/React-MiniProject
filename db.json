@@ -1,108 +1,184 @@
 {
-    "users": [
-        {
-            "id": "1",
-            "name": "Vüsal Əliyev",
-            "image": "https://kofe.al/storage/images/users/65c8c6ed8d403.jpeg",
-            "info": "TikTok-da oyun yayınları açarağ tanınan biri.",
-            "supporter":  119,
-            "balance":0
+  "users": [
+    {
+      "id": "1",
+      "name": "Vüsal Əliyev",
+      "image": "https://kofe.al/storage/images/users/65c8c6ed8d403.jpeg",
+      "info": "TikTok-da oyun yayınları açarağ tanınan biri.",
+      "supporter": 119,
+      "balance": 0
+    },
+    {
+      "id": "2",
+      "name": "Toğrul Ələkbər",
+      "image": "https://kofe.al/storage/images/users/65d7377a20176.JPG",
+      "info": "İnsan inkişafçısı",
+      "supporter": 58,
+      "balance": 0
+    },
+    {
+      "id": "3",
+      "name": "gagaonline",
+      "image": "https://kofe.al/storage/images/users/65ccf94fe2693.jpg",
+      "info": "Yayımcı",
+      "supporter": 20,
+      "balance": 0
+    },
+    {
+      "id": "4",
+      "name": "Rehim Alxazov",
+      "image": "https://kofe.al/storage/images/users/65e4604aed94f.jpeg",
+      "info": "TikTokda yayimcilig edib Pubg Mobile Oynuyuram",
+      "supporter": 8,
+      "balance": 0
+    },
+    {
+      "id": "5",
+      "name": "Chene Podcast",
+      "image": "https://kofe.al/storage/images/users/65f6e1d18783f.jpg",
+      "info": "Çənə Podcast",
+      "supporter": 20,
+      "balance": 0
+    },
+    {
+      "id": "6",
+      "name": "Məhəmməd Mehdiyev",
+      "image": "https://kofe.al/storage/images/users/660a6b15dc3a0.jpg",
+      "info": "Editor",
+      "supporter": 1,
+      "balance": 0
+    },
+    {
+      "id": "7",
+      "name": "Kamran Aliyev",
+      "image": "https://kofe.al/storage/images/users/6612f871ee8b9.jpg",
+      "info": "Yayıncı",
+      "supporter": 2,
+      "balance": 0
+    },
+    {
+      "id": "8",
+      "name": "REZITONE",
+      "image": "https://kofe.al/storage/images/users/6622789a28d18.jpg",
+      "info": "Entertainment / Music",
+      "supporter": 2,
+      "balance": 0
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "question": "Kofe.al nədir?",
+      "answer": "Kofe.al, pərəstişkarlarınızdan birbaşa gəlir əldə etməyiniz üçün ən sadə yoldur. Siz bəxşişlər qəbul edə, üzvlük səviyyələri yarada, onlayn mağaza aça və 9% platforma haqqı ilə komissiya ala bilərsiniz."
+    },
+    {
+      "id": "2",
+      "question": "Kofe.al kimlər üçündür?",
+      "answer": "Sənətkarlar, Rəssamlar, Streamerlər, Podkastçılar, Yazıçılar, Fotoqraflar, Kinorejissorlar, İnfluencerlər və hər cür yaradıcı şəxslər Kofe.al-dan istifadə edirlər."
+    },
+    {
+      "id": "3",
+      "question": "Ödənişi necə alacağam?",
+      "answer": "Bəxşiş ödənişləri növbəti gün sizin bank kartınıza köçürüləcək. Məhsul və xidmət satışından əldə edilən gəlirlər isə VÖEN-li bank hesabınıza köçürülür. Bu qədər sadə!"
+    },
+    {
+      "id": "4",
+      "question": "Xidmət haqqı nə qədərdir?",
+      "answer": "Biz bütün əməliyyat haqları və komissiyamız daxil olmaqla 9% komissiya alırıq."
+    },
+    {
+      "id": "5",
+      "question": "Ödənilən vəsaitlər ilə kofe almalıyam?",
+      "answer": "Təbii ki, yox! Biz qəhvəni sevirik, amma bu, sadəcə dostluq metaforasıdır. Sadəcə, işinizi dəstəkləmək üçün pərəstişkarlarından qəhvə almağı xahiş etmək sadəcə ianə verməkdən daha bəsitdir. Siz həmçinin qəhvəni öz zövqünüzü uyğun başqa bir şeyə dəyişə bilərsiniz. Məsələn kofe əvəzinə; çay, dönər, hamburger, su və ya pizza istəyə bilərsiniz."
+    },
+    {
+      "id": "6",
+      "question": "Kofe.al ilə nə qədər qazana bilərəm?",
+      "answer": "Hər şey sizin izləyici və pərəstişkarlarınız ilə münasibət və kommunikasiyadan asılıdır. Kofe.al olaraq toplanacaq məbləğə heç bir limit tətbiq etmirik. Yetər ki, siz yaradın, paylaşın, satın və qazanın."
+    },
+    {
+      "id": "7",
+      "question": "Kofe.al xarici analoqlardan fərqi nədir?",
+      "answer": "Patreon, BMC, Ko-fi kimi xarici analoqlardan əsas fərqimiz həm yaradıcı şəxslərn, həm də pərəstişkarlar üçün verdiyi üstünlüklər və dil seçimidir. Yaradıcı şəxslər xarici analoqlardan ödənişləri almaq üçün Azərbaycanda aktiv olmayan PayPal və Stripe kimi platformalardan ödənişləri almaq məcburiyyətindədilər. Pərəstişkarlar isə xarici ödəniş sistemləri ilə ödəniş etdiklərində əlavə 18% ƏDV vergisi ödəmək məcburiyyətində qaldıqlarından, ödəmələrin miqdarı daha az olur. Kofe.al ilə isə əlavə komissiya olmadan, yerli bank kartınıza ödəniş ala bilərsiniz."
+    }
+  ],
+  "transactions": [
+    {
+      "id": "2162",
+      "userId": "1",
+      "amount": 1,
+      "message": "dsad",
+      "email": "dsdsa"
+    }
+  ],
+  "blogs":[
+    {
+        "id":"1",
+        "image1": "https://kofe.al/storage/images/users_posts/1wtFgyIKxPvorJtbX9LwMvG2gCZMHASwFSXKBwt1.jpg",
+        "name": "Kassir Qızın Təbəssümü"
+       
         },
         {
-            "id": "2",
-            "name": "Toğrul Ələkbər",
-            "image": "https://kofe.al/storage/images/users/65d7377a20176.JPG",
-            "info": "İnsan inkişafçısı",
-            "supporter": 58,
-            "balance":0 
-        },
-        {
-            "id": "3",
-            "name": "gagaonline",
-            "image": "https://kofe.al/storage/images/users/65ccf94fe2693.jpg",
-            "info": "Yayımcı",
-            "supporter": 20,
-            "balance":0 
-        },
-         {
-            "id": "4",
-            "name": "Rehim Alxazov",
-            "image": "https://kofe.al/storage/images/users/65e4604aed94f.jpeg",
-            "info": "TikTokda yayimcilig edib Pubg Mobile Oynuyuram",
-            "supporter": 8,
-            "balance":0 
-        },
-       {
-            "id": "5",
-            "name": "Chene Podcast",
-            "image": "https://kofe.al/storage/images/users/65f6e1d18783f.jpg",
-            "info": "Çənə Podcast",
-            "supporter": 20,
-            "balance":0 
-        },
-         {
-            "id": "6",
-            "name": "Məhəmməd Mehdiyev",
-            "image": "https://kofe.al/storage/images/users/660a6b15dc3a0.jpg",
-            "info": "Editor",
-            "supporter": 1,
-            "balance":0 
-        },
-        {
-            "id": "7",
-            "name": "Kamran Aliyev",
-            "image": "https://kofe.al/storage/images/users/6612f871ee8b9.jpg",
-            "info": "Yayıncı",
-            "supporter": 2,
-            "balance":0 
-        },
-        {
-            "id": "8",
-            "name": "REZITONE",
-            "image": "https://kofe.al/storage/images/users/6622789a28d18.jpg",
-            "info": "Entertainment / Music",
-            "supporter": 2,
-            "balance":0
-        }
-    ],
-    "questions":[
-        {
-            "id":1,
-            "question":"Kofe.al nədir?",
-            "answer":"Kofe.al, pərəstişkarlarınızdan birbaşa gəlir əldə etməyiniz üçün ən sadə yoldur. Siz bəxşişlər qəbul edə, üzvlük səviyyələri yarada, onlayn mağaza aça və 9% platforma haqqı ilə komissiya ala bilərsiniz."
-        },
-        {
-            "id":2,
-            "question":"Kofe.al kimlər üçündür?",
-            "answer":"Sənətkarlar, Rəssamlar, Streamerlər, Podkastçılar, Yazıçılar, Fotoqraflar, Kinorejissorlar, İnfluencerlər və hər cür yaradıcı şəxslər Kofe.al-dan istifadə edirlər."
-        },
-        {
-            "id":3,
-            "question":"Ödənişi necə alacağam?",
-            "answer":"Bəxşiş ödənişləri növbəti gün sizin bank kartınıza köçürüləcək. Məhsul və xidmət satışından əldə edilən gəlirlər isə VÖEN-li bank hesabınıza köçürülür. Bu qədər sadə!"
-        },
-        {
-            "id":4,
-            "question":"Xidmət haqqı nə qədərdir?",
-            "answer":"Biz bütün əməliyyat haqları və komissiyamız daxil olmaqla 9% komissiya alırıq."
-        },
-        {
-            "id":5,
-            "question":"Ödənilən vəsaitlər ilə kofe almalıyam?",
-            "answer":"Təbii ki, yox! Biz qəhvəni sevirik, amma bu, sadəcə dostluq metaforasıdır. Sadəcə, işinizi dəstəkləmək üçün pərəstişkarlarından qəhvə almağı xahiş etmək sadəcə ianə verməkdən daha bəsitdir. Siz həmçinin qəhvəni öz zövqünüzü uyğun başqa bir şeyə dəyişə bilərsiniz. Məsələn kofe əvəzinə; çay, dönər, hamburger, su və ya pizza istəyə bilərsiniz."
-        },
-        {
-            "id":6,
-            "question":"Kofe.al ilə nə qədər qazana bilərəm?",
-            "answer":"Hər şey sizin izləyici və pərəstişkarlarınız ilə münasibət və kommunikasiyadan asılıdır. Kofe.al olaraq toplanacaq məbləğə heç bir limit tətbiq etmirik. Yetər ki, siz yaradın, paylaşın, satın və qazanın."
-        },
-        {
-            "id":7,
-            "question":"Kofe.al xarici analoqlardan fərqi nədir?",
-            "answer":"Patreon, BMC, Ko-fi kimi xarici analoqlardan əsas fərqimiz həm yaradıcı şəxslərn, həm də pərəstişkarlar üçün verdiyi üstünlüklər və dil seçimidir. Yaradıcı şəxslər xarici analoqlardan ödənişləri almaq üçün Azərbaycanda aktiv olmayan PayPal və Stripe kimi platformalardan ödənişləri almaq məcburiyyətindədilər. Pərəstişkarlar isə xarici ödəniş sistemləri ilə ödəniş etdiklərində əlavə 18% ƏDV vergisi ödəmək məcburiyyətində qaldıqlarından, ödəmələrin miqdarı daha az olur. Kofe.al ilə isə əlavə komissiya olmadan, yerli bank kartınıza ödəniş ala bilərsiniz."
-        }
-    ],
-    "transactions":[
-        
-    ]
+            "id":"2",
+            "image1": "https://kofe.al/storage/images/users_posts/ki8myVKIHvfJIFM0jyrwCBcMRFTuNMqy9oKdTXgO.jpg",
+            "name": "Təyyarənin Apardığı Yer"
+           
+            },
+            {
+                "id":"3",
+                "image1": "https://kofe.al/storage/images/users_posts/ax69iwr4r2mgvbCjmD3X5AIY2khndu6KYQafHbld.jpg",
+                "name": "Mənim adım SEİKO-dur."
+               
+                },
+                {
+                    "id":"4",
+                "image1": "https://kofe.al/storage/images/users_posts/bLgLutXAcx3fpI8zyKODg8aBamsSUeJ1hSaluijD.jpg",
+                "name": "Rəssam Aşının Ətri"
+                }
+],
+"blogsyazar":[
+    {
+        "id":1,
+        "img":"https://kofe.al/storage/images/users_posts/GYFWrJZ7AI3XR9IJ8Hr2EROIPylZi949CYCHwGOw.jpg",
+        "name":"Bundan sonra daha effektiv yazacaqsan!",
+        "description":"Adətən mətn yazarkən diqqətdən qaçırdığımız bir sıra məqamlar olur. Onun strukturu, vermək istədiyimiz mesajın zamanlaması və forması çox vaxt oxucunu",
+        "yazarname":"Avaz Cafarov",
+        "yazarimg":"https://kofe.al/storage/images/users/660d16bccc08c.png",
+        "looks":3,
+        "date":"20.04.2024",
+        "etrafli":"Instagram və digər sosial şəbəkələrin yarandığı dövrdən etibarən panel vurmaq ifadəsi artıq hər kəsə məlumdur.Nədir bu panel vurmaq? Müəyyən miqdar pul müqabilində səhifənizə passiv izləyicilər - botlar yönləndirilir. Bu botlar bəyənmə və ya sadəcə izləyici rolunu oynaya bilər.İzləyici və bəyənmə çoxluğu nə kimi zərər verə bilər ki?Bu izləyicilər sizi “özxoşuna” izləmədiyi üçün sizin orijinal kütləniz sayılmır. Gələcək dövrlərdə siz reklam verdikdə isə loru dildə desək, Instagram sizin bu saxta izləyici kütlənizi örnək tutaraq o tipli profillərin qarşısına reklam çıxarır. Və nəticədə pulunuz boşa xərclənmiş olur. Rəqəmlər hər nə olursa olsun daim orqanik formada böyüyərək marağını cəlb etdiyiniz kütləyə çatmaq daha sağlam və daha vacibdir.  "
+    },
+    {    "id":2,
+        "img":"https://kofe.al/storage/images/users_posts/SM8S3Zgsh6TXX7XqfKdn3AXiPyJ3F2MC67ptRdeh.jpg",
+        "name":"“Uğur hekayəm”",
+        "description":"“Bir Fincan Çay”",
+        "yazarname":"Günel İsmayılova",
+        "yazarimg":"https://kofe.al/storage/images/users/6622cc5fe5473.jpeg",
+        "looks":26,
+        "date":"20.04.2024",
+        "etrafli":"Instagram və digər sosial şəbəkələrin yarandığı dövrdən etibarən panel vurmaq ifadəsi artıq hər kəsə məlumdur.Nədir bu panel vurmaq? Müəyyən miqdar pul müqabilində səhifənizə passiv izləyicilər - botlar yönləndirilir. Bu botlar bəyənmə və ya sadəcə izləyici rolunu oynaya bilər.İzləyici və bəyənmə çoxluğu nə kimi zərər verə bilər ki?Bu izləyicilər sizi “özxoşuna” izləmədiyi üçün sizin orijinal kütləniz sayılmır. Gələcək dövrlərdə siz reklam verdikdə isə loru dildə desək, Instagram sizin bu saxta izləyici kütlənizi örnək tutaraq o tipli profillərin qarşısına reklam çıxarır. Və nəticədə pulunuz boşa xərclənmiş olur. Rəqəmlər hər nə olursa olsun daim orqanik formada böyüyərək marağını cəlb etdiyiniz kütləyə çatmaq daha sağlam və daha vacibdir.  "
+    },
+    {   "id":3,
+        "img":"https://kofe.al/storage/images/users_posts/T4V7vyyfmToenzeByo58EVP5xqp3j9C0eXQGkyPS.jpg",
+        "name":"“Worldef Istanbul tədbirinə ÖDƏNİŞSİZ Bilet”",
+        "description":"Worldef Istanbul iştirak etmək istəyən şəxslər üçün ödənişsiz bilet əldə etmək istəyənlər üçün şans",
+        "yazarname":"ECOM AZ",
+        "yazarimg":"https://kofe.al/storage/images/users/65eee58a3047d.png",
+        "looks":4,
+        "date":"19.04.2024",
+        "etrafli":"Instagram və digər sosial şəbəkələrin yarandığı dövrdən etibarən panel vurmaq ifadəsi artıq hər kəsə məlumdur.Nədir bu panel vurmaq? Müəyyən miqdar pul müqabilində səhifənizə passiv izləyicilər - botlar yönləndirilir. Bu botlar bəyənmə və ya sadəcə izləyici rolunu oynaya bilər.İzləyici və bəyənmə çoxluğu nə kimi zərər verə bilər ki?Bu izləyicilər sizi “özxoşuna” izləmədiyi üçün sizin orijinal kütləniz sayılmır. Gələcək dövrlərdə siz reklam verdikdə isə loru dildə desək, Instagram sizin bu saxta izləyici kütlənizi örnək tutaraq o tipli profillərin qarşısına reklam çıxarır. Və nəticədə pulunuz boşa xərclənmiş olur. Rəqəmlər hər nə olursa olsun daim orqanik formada böyüyərək marağını cəlb etdiyiniz kütləyə çatmaq daha sağlam və daha vacibdir.  "
+
+    },
+    {   "id":4,
+    "img":"https://kofe.al/storage/images/users_posts/nnjA4vCkIqCfe4eFz9YfBmtLBBklf8RLbI3aJzBd.jpg",
+    "name":"“Nəbi Xəzri",
+    "description":"Nəbi Xəzrinin - Ürək şeiri ilə tanış olaq",
+    "yazarname":"Tofiq Vəliyev",
+    "yazarimg":"https://kofe.al/storage/images/users/66213004c6fca.jpeg",
+    "looks":4,
+    "date":"19.04.2024",
+    "etrafli":"Instagram və digər sosial şəbəkələrin yarandığı dövrdən etibarən panel vurmaq ifadəsi artıq hər kəsə məlumdur.Nədir bu panel vurmaq? Müəyyən miqdar pul müqabilində səhifənizə passiv izləyicilər - botlar yönləndirilir. Bu botlar bəyənmə və ya sadəcə izləyici rolunu oynaya bilər.İzləyici və bəyənmə çoxluğu nə kimi zərər verə bilər ki?Bu izləyicilər sizi “özxoşuna” izləmədiyi üçün sizin orijinal kütləniz sayılmır. Gələcək dövrlərdə siz reklam verdikdə isə loru dildə desək, Instagram sizin bu saxta izləyici kütlənizi örnək tutaraq o tipli profillərin qarşısına reklam çıxarır. Və nəticədə pulunuz boşa xərclənmiş olur. Rəqəmlər hər nə olursa olsun daim orqanik formada böyüyərək marağını cəlb etdiyiniz kütləyə çatmaq daha sağlam və daha vacibdir.  "
+
+}
+]
 }

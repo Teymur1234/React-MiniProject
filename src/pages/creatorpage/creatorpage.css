@@ -31,12 +31,14 @@
     justify-content: center;
     align-items: center;
     margin-top: 40px;
+    background-color: #F9F9FF;
 }
 .section2-main{
     width: 87%;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    background-color: white;    
 }
 .money-part{
     border: 1px solid #CBA1E8;

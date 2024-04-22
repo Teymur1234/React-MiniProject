@@ -11,6 +11,7 @@ import CreatorsPage from './pages/creators/CreatorsPage';
 import ErrorPage from './pages/ErrorPage';
 import { Provider } from 'react-redux';
 import { Store } from './Store';
+import BlogsPage from './pages/blogs/BlogsPage';
 
 
 const router=createBrowserRouter([
@@ -23,7 +24,7 @@ const router=createBrowserRouter([
         element:<Home/>
        },
        {
-        path:"/blog",
+        path:"/blog/:id",
         element:<Blog/>
        },
        {
@@ -41,6 +42,10 @@ const router=createBrowserRouter([
        {
         path:"*",
         element:<ErrorPage/>
+       },
+       {
+        path:"/blogs",
+        element:<BlogsPage/>
        } 
     ] 
   }

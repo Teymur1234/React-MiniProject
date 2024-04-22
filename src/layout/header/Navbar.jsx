@@ -37,10 +37,10 @@ const Navbar = () => {
                         <Link to={"/"}>Üzvlərimiz</Link>
                     </li>
                     <li>
-                        <Link to={"/shop"}>Bloq</Link>
+                        <Link to={"/blogs"}>Bloq</Link>
                     </li>
                     <li>
-                        <Link to={"/featured"}>FAQ</Link>
+                        <Link to={"/faq"}>FAQ</Link>
                     </li>
                 </ul>
             </div>

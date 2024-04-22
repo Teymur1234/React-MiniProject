@@ -11,11 +11,12 @@ const CreatorsPage = () => {
         axios("http://localhost:3001/users").then(response=>setUsers(response.data))
     },[])
 
-  
+
     const navigate=useNavigate()
     const goCreator=(person)=>{
         navigate(`/creator/${person.id}` , {state: {member:person}})
     }
+
   return (
     <>
         <section className='section1-creators'>
