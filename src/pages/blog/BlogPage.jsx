@@ -12,7 +12,7 @@ const BlogPage = () => {
   return (
     <>
       <section className='section1-blog' style={{backgroundImage:"url(https://kofe.al/assets/images/bg/bg-image-10.jpg)"}}>
-        <div >
+        <div className='blog-main'>
           <div>
           <img src={post.yazarimg} alt="" /><h3>{post.yazarname}</h3>
           </div>
@@ -23,7 +23,7 @@ const BlogPage = () => {
           </ul>          
           <h1>{post.name}</h1>
           <p>{post.description}</p>
-          <img src={post.img} alt="" />
+          <img className='post-img' src={post.img} alt="" />
           <p>{post.etrafli}</p>
         </div>
       </section>
