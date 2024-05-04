@@ -111,12 +111,12 @@ const CreatorPage = () => {
               <p style={{display:bloq? "block":"none"}}>4 Ilden Coxdur Ki Azerbaycanda Mobil Oyun Yayınçısıyam</p>
               <div className='messages'>
                 <h1>Ən son kofe alanlar</h1>
-                {sends && sends.map(send=> send.userId === id ?(
+                 {sends ? ( sends.map(send=> send.userId === id ?(
                   <div key={send.userId}>
                     <p>{send.email} {send.amount} kofe aldı.</p>
                     <p>{send.message}</p>
                   </div>
-                ): console.log("salam"))}
+                ): console.log("salam"))): <p>Bu istifadəçi üçün heç kim kofe almadı.</p>}
               </div>
           </div>
           <div style={{display: bloq ? "none": "inline-block"}}>
