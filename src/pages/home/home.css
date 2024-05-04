@@ -242,7 +242,12 @@
     width: 250px;
     height: 50px;
   }
-  
+    .section5 h1:first-of-type{
+    font-size: 20px;
+  }
+  .section5 h3:first-of-type{
+    font-size: 17px;
+  }
 }
 @media only screen and (max-width: 550px){
     .section1-div input{
